@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windbreaker Breakout</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Windbreaker Breakout</h1>
+        <p>Gusts of wind push the ball sideways. Keep it in play and clear the bricks.</p>
+      </header>
+      <main>
+        <canvas id="game" width="900" height="600"></canvas>
+        <aside class="hud">
+          <div><strong>Score:</strong> <span id="score">0</span></div>
+          <div><strong>Lives:</strong> <span id="lives">3</span></div>
+          <div><strong>Wind:</strong> <span id="wind">0.0</span></div>
+          <div class="controls">
+            <h2>Controls</h2>
+            <ul>
+              <li>Move: Arrow keys / A-D</li>
+              <li>Launch ball: Space</li>
+              <li>Pause: P</li>
+              <li>Restart: R</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+      <footer>
+        <p>Twist: the wind shifts every few seconds, nudging the ball in new directions.</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
